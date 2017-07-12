@@ -1,4 +1,4 @@
-var myPokemonRoster = ["Eevee", "Snivy", "Braviary"];
+var myPokemonRoster = ["Magmar", "Lapras", "Eevee", "Snivy", "Braviary"];
 var firstToFight = myPokemonRoster[0];
 var secondTOFight = myPokemonRoster[1];
 myPokemonRoster.pop();
@@ -10,7 +10,7 @@ if (myPokemonRoster.length >= 5){
     for(var i=0; i<myPokemonRoster.length; i++){
         console.log(myPokemonRoster[i])
     }
-    for(var i=5; i>=0; i=i-1){
+    for(var i=5; i>=0; i--){
     console.log(myPokemonRoster[i])
     }
 }
