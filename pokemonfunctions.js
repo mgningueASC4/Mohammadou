@@ -35,6 +35,17 @@ console.log(randSentence());
 
 var firstPokemon = ["Vulpix", 41, 38]
 var secondPokemon = ["Arcanine", 110, 90]
+var thirdPokemon = ["Gengar", 65, 60 ]
+var fourthPokemon = ["Donphan", 120, 90]
+function randPokemon(firstPokemon, secondPokemon, thirdPokemon, fourthPokemon) //bnus
+    var pokemons = [firstPokemon, secondPokemon, thirdPokemon, fourthPokemon]
+    var firstnum = Math.floor(Math.random()*pokemons.length)
+    var secondnum = Math.floor(Math.random()*pokemons.length)
+    while (secondnum==firstnum){
+        var secondnum = Math.floor(Math.random()*pokemons.length)
+    }
+    var firstPokemon = 
+    return 
 function pokeAttack(firstPokemon, secondPokemon){
     secondPokemon[2] = (secondPokemon[2]- firstPokemon[1]);
     return secondPokemon;
