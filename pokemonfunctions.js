@@ -39,9 +39,9 @@ var thirdPokemon = ["Gengar", 65, 60 ]
 var fourthPokemon = ["Donphan", 120, 90]
 function randPokemon(firstPokemon, secondPokemon, thirdPokemon, fourthPokemon) //bnus
     var pokemons = [firstPokemon, secondPokemon, thirdPokemon, fourthPokemon]
-    var firstnum = Math.floor(Math.random()*pokemons.length)
-    var secondnum = Math.floor(Math.random()*pokemons.length)
-    while (secondnum==firstnum){
+    var firstnum = Math.floor(Math.random()*pokemons.length) //gets random number, later used to extract a pokemon
+    var secondnum = Math.floor(Math.random()*pokemons.length)//same as above comment
+    while (secondnum==firstnum){ /*If the numbers are the same, a pokemon would attack the same one;therefore  get aanother number*/
         var secondnum = Math.floor(Math.random()*pokemons.length)
     }
     var firstPokemon = 
@@ -51,4 +51,4 @@ function pokeAttack(firstPokemon, secondPokemon){
     return secondPokemon;
 }
 
-console.log(pokeAttack(firstPokemon, secondPokemon));
+console.log(potkeAttack(firstPokemon, secondPokemon));
