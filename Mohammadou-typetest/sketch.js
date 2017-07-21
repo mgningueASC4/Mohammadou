@@ -1,28 +1,28 @@
 var arr = ["Jacky John!", "JImmybob", "Taytataraaa!!", "Gratatataa"]
-var choice = random(4)
-var sample = arr[choice]
+var x = (Math.random(4));
+var sample = arr[x]
+console.log(x.toString)
 //var sample = "golor"
 var points = 0;
-
+var message;
 
 
 function setup(){
     createCanvas(windowWidth,windowHeight);
-
-
     background('yellow');
-    intro = "Test Your Typing!"
-    textSize(30);
-    text(intro, 200,200);
+        intro = "Test Your Typing!"
+        textSize(30);
+        text(intro, 200,200);
     //shows sample sentence
-    textSize(20);
-    text(sample, 250, 400);
+        textSize(20);
+        text(sample, 250, 400);
     //input textbox in 
     inp = createInput('', "text");
     inp.position(250, 500)
-    text("Points:", 100, 600)
-    choice = random(0,3)
+    textSize(40);
+    text("Points:", 150, 600)
 }
+
 
 /*correct = "How do you like the food?";
     fill(255,255,255);
@@ -32,16 +32,28 @@ function setup(){
 }*/
 
 function keyTyped(){
-    if (keyCode == ENTER){
-        if (inp.value() == sample){
+    if (keyCode === ENTER){
+        background('yellow');
+        intro = "Test Your Typing!"
+        textSize(30);
+        text(intro, 200,200);
+    //shows sample sentence
+        textSize(20);
+        text(sample, 250, 400);
+        textSize(30)
+        text("Points:", 150, 600)
+        if (inp.value() === sample){
             points += 10;
+            message = text("Great Job!",200,700)
+            textSize(30)
+            text(points, 250, 600)
         }
         else {
-            text("You need to practice more", 200, 700);
+            message = text("You need to practice more!", 200, 700)
             points -= 10;
+            textSize(30)
+            text(points, 250, 600)
         }
-        textSize(30)
-        text(points, 250, 600)
     }
 }
 
