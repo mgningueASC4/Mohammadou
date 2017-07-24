@@ -1,0 +1,27 @@
+body{
+    font-family: 'Bellefair', serif;
+}
+
+.top-menu{
+    font-size: 20px;
+    background-color: white;
+    color: grey;
+}
+
+
+a{ 
+    text-decoration: none !important;
+    color: grey;
+}
+
+#top{
+    height:50px;
+    width:500px
+}
+
+.introbar{
+    font-size: 20px;
+    background-color: #333333;
+    height: 30px;
+    padding: 10px 10px 10px 10px;
+}

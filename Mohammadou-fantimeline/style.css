@@ -1,0 +1,40 @@
+body{
+    background-color: red;
+    font-family: 'Bellefair', serif;"
+}
+h1{
+    color: white;
+}
+
+#propic{
+    border-radius: 10px;
+    border:20px solid red;
+}
+
+.Stats{
+    background-color: lightcoral;
+    padding: 20px 20px 20px 20px;
+}
+
+.bolt{
+    background-color: greenyellow;
+    font-size: 36px;
+    padding: 10px 10px 10px 10px;
+}
+
+.imges{
+    border: 20px solid greenyellow;
+    border-radius: 20px;
+    width: 700px;
+    height: 400px;
+    float: center;
+}
+
+.bullets{
+    font-size: 20px;
+    width: 550px;
+    height: 300px;
+    font-weight: bold;
+    /*display:flex;
+    justify-content: space-around;*/
+}
