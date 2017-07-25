@@ -1,27 +1,80 @@
 body{
     font-family: 'Bellefair', serif;
 }
+header{
+    background:url(/assets/images/cloud/lines.svg), rgb(27, 33, 40);
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
 
 .top-menu{
     font-size: 20px;
     background-color: white;
     color: grey;
+    margin: 0 auto;
 }
-
+li{
+    display: inline;
+    color: grey;
+}
 
 a{ 
     text-decoration: none !important;
     color: grey;
+    margin: 0 10px;
 }
-
+input{
+    color:white;
+    background: greenyellow;
+}
 #top{
     height:50px;
     width:500px
 }
-
+img{
+    width: 150px;
+    height: 30px;
+}
 .introbar{
     font-size: 20px;
     background-color: #333333;
     height: 30px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
+}
+nav{
+    text-align: left;
+}
+.beginning-message{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+}
+
+.second-main-message{
+    color:white;
+    text-align: center;
+    font-size: 45px;
+    margin: auto;
+    padding: 1
+}
+
+.main-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin: 30px 10px 100px 10px;
+    padding: 20px 30px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#buttonone{
+    background-color: lightgreen;
+    color:white
+}
+
+#buttontwo{
+    background-color: white;
+    color: lightgreen;
 }
