@@ -1,0 +1,14 @@
+header{
+    background-image: url("./assets/back_header.jpg");
+    height:300px;
+    background-size: cover;
+    background-position: center;
+}
+
+#logo{
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 50px;
+    border-radius: 5px;
+}
