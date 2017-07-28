@@ -1,0 +1,41 @@
+
+
+body{
+    font-family: 'Ek Mukta', sans-serif;   
+     background-color: black;
+}
+
+#header{
+    background-color: rgba(0,0,0,0.1);
+    color: yellow;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+}
+
+header{
+    margin: 0;
+}
+
+h1{
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.pic {
+    height: 25px;
+    width: 25px;
+
+}
+p{
+    font-size: 25px;
+}
+#images{
+    display: inline-block;
+}
+
+
+
+/*#bgvid { 
+    display: none;
+ }*/
