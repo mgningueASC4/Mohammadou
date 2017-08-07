@@ -1,0 +1,38 @@
+body{
+    font-family: 'Neucha', cursive;
+
+}
+header{
+    background-color: teal;
+}
+
+img{
+    border-radius: 300px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+.name{
+    font-size: 60px;
+    color: white;
+    text-align: center
+}
+
+ul{
+    background-color: navy;
+    border-radius: 30px;
+}
+
+li{
+    font-size: 30px;
+    display: inline;;
+    justify-content: flex-end;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    text-decoration:
+}
+
+#location{
+    text-align: center;
+}

@@ -31,7 +31,8 @@ p{
     font-size: 25px;
 }
 #images{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 

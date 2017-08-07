@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Rock,Paper,Scissors</title>
+
+    <!--Go to https://console.firebase.google.com-->
+    <!--Sign in and add a project "fireMessage"-->
+    <!--PASTE SNIPPET HERE-->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+            // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyASyQmrj-8_QmEIZCM7jtqK6KguhTP82Xg",
+            authDomain: "firemessage-8309e.firebaseapp.com",
+            databaseURL: "https://firemessage-8309e.firebaseio.com",
+            projectId: "firemessage-8309e",
+            storageBucket: "",
+            messagingSenderId: "1075310861110"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Alike+Angular|Asul|Eczar" rel="stylesheet">
+
+    <!--custom files-->
+    <script src="rps.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri|Lora" rel="stylesheet">
+    
+
+</head>
+<body>
+
+    <!--Add your name-->
+    <h1>الصخرة، ورقة، مقص/ Камень Ножницы Бумага</h1>
+    <h2 id="score">score : </h2>
+    <div id="user-data">
+        <form>
+            Name:<br>
+            <input type="text" id="userName"><br>
+            <!-- <input type="submit" value="Submit" onclick="getName()"> -->
+        </form>
+        <button onclick="getName()">Submit</button>
+    </div>
+    <div id="game-start">
+        <button onclick="fight('rock')">Камень</button>
+        <button onclick="fight('paper')"> Ножницы</button>
+        <button onclick="fight('scissors')">Бумага</button>
+    </div>  
+</body>
+</html>

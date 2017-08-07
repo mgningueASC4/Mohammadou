@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="https://www.google.com/jsapi"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    </head>
+    <body>
+    </body>
+</html>
+<!-- ADD TO JSCRIPT FOR THIS
+$.getJSON(
+    'https://randomuser.me/api/?results=500'
+    (data) => {
+        var cals = data.hits[0].fields.nf_calories
+        $('body').append(`<h1>There are ${cals} calories in a Big Mac!</h1>`)
+    }
+)
+
+const appID = "..." stays the same always
+let id = 'sffs' can change
+-->

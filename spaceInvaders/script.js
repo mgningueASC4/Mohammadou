@@ -2,7 +2,7 @@ var x;
 var y;
 var alienx;
 var alieny;
-var xIncrement = -2;
+var xIncrement = -5;
 var bulletx;
 var bullety;
 var bulletfire;
@@ -68,7 +68,6 @@ function draw(){
     rect(bulletx,bullety, 40,40)
     rect(bulletfirex, bulletfirey, 40, 40)
     //enemy alien
-    for (var i = 0)
     fill(255,0,0);
     rect(alienx, alieny, 100, 100);
     //alien automatic movement from side to side, if reaches border, goes oopposite way
