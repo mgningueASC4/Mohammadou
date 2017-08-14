@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCLEcVUIs95jBeon93sEGGyA9Ck8QI-20M",
+            authDomain: "rps-last.firebaseapp.com",
+            databaseURL: "https://rps-last.firebaseio.com",
+            projectId: "rps-last",
+            storageBucket: "rps-last.appspot.com",
+            messagingSenderId: "170394151027"
+        };
+        firebase.initializeApp(config);
+        </script>
+<script src = "main.js"></script>
+    
+       
+        <!--class="header-->
+            <div class="container">
+                <h1><span class="rock">ROCK!</span>, <span class="paper">PAPER!</span>, <span class="scissors">SCISSORS!<span class="shoot">, SHOOT!</span></h1>
+            
+            </div>
+    </head>
+     <body>
+         <div class="main">
+            <div class="container">
+                <section class="content">
+                    <button id = "rock" class="play rock" type="button" onclick="play('rock')"></button>
+                    <button id ="paper" class="play paper" type="button" onclick="play('paper')"></button>
+                    <button id = "scissors" class="play scissors" type="button" onclick="play('scissors')"></button>
+                    <div style="clear:both;"></div>
+                    <p><span id="player"></span> <span id="opponent"></span></p>
+                    <h2 id="results"></h2>
+                </section>
+                <aside class="aside">
+                    <div class="scorebox">
+                        <h2>Score</h2>
+                        <div class="score-num"><span id="wins">0</span> <br />wins</div>
+                        <div class="score-divider"><span>-</span></div>
+                        <div class="score-num"><span id="loses">0</span> <br />loses</div>
+                        </div>
+                    <div class = "leader">
+                        </div>
+                    <button type="reset" id="reset" onclick="reset()">reset scores</button>
+                    <h2> Leaderboard</h2>
+        <div id = "all-scores">
+            </div>
+                </aside>
+            </div> <!-- ends container -->
+        </div> <!-- ends main -->
+        </body>
+</html>

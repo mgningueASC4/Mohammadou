@@ -7,3 +7,17 @@ body{
 button{
     padding: 20px;
 }
+
+img{
+    width: 90px;
+    height: 90px;
+    border: 20x solid darkgray;
+    border-radius: 20px;
+}
+
+.uwin{
+    color: green;
+}
+.theywin{
+    color: red;
+}

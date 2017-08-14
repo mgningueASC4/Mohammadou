@@ -7,21 +7,20 @@
 
     <title>Rock,Paper,Scissors</title>
 
-    <!--Go to https://console.firebase.google.com-->
-    <!--Sign in and add a project "fireMessage"-->
-    <!--PASTE SNIPPET HERE-->
+   
+    
     <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
     <script>
-            // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyASyQmrj-8_QmEIZCM7jtqK6KguhTP82Xg",
-            authDomain: "firemessage-8309e.firebaseapp.com",
-            databaseURL: "https://firemessage-8309e.firebaseio.com",
-            projectId: "firemessage-8309e",
-            storageBucket: "",
-            messagingSenderId: "1075310861110"
-        };
-        firebase.initializeApp(config);
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCo7BTVqj7VIrk_HM5YBpNeyBXXim2cJs4",
+        authDomain: "rockpaperscissors-b92bb.firebaseapp.com",
+        databaseURL: "https://rockpaperscissors-b92bb.firebaseio.com",
+        projectId: "rockpaperscissors-b92bb",
+        storageBucket: "",
+        messagingSenderId: "756824007630"
+    };
+    firebase.initializeApp(config);
     </script>
 
 
@@ -57,5 +56,9 @@
         <button onclick="fight('paper')"> Ножницы</button>
         <button onclick="fight('scissors')">Бумага</button>
     </div>  
+    <div id="results">
+    </div>
+    <div id="leaderboard">
+    </div>
 </body>
 </html>

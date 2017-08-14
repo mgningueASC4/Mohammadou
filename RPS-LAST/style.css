@@ -1,0 +1,45 @@
+body {
+    background-color: gold;
+    text-align:center;
+}
+p {
+font-family: 'Sedgwick Ave', cursive;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+h2{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+img {
+   height:200px;
+   width:200px
+}
+#player, #opponent{
+    font-size: 30px;
+}
+#rock{
+    background-image: url('http://geology.com/articles/difficult-rocks/difficult-rock-identification.jpg');
+}
+#paper{
+    background-image:url("http://cdn.dick-blick.com/items/102/40/10240-1009-1-2ww-m.jpg")
+}
+#scissors{
+    background-image:url("http://www2.fiskars.com/var/fiskars_amer/storage/images/frontpage2/products/crafting-and-sewing/scissors-and-shears/non-stick-detail-scissors-no.-5/14334-16-eng-US/Non-stick-Detail-Scissors-No.-5.jpg");
+}
+.play {
+height:300px;
+width:300px;
+background-position: center;
+background-size: 290px 290px;
+background-repeat: no-repeat;
+}
+#all-scores{
+    font-family: 'Monoton', cursive;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+
+}

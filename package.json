@@ -1,0 +1,28 @@
+{
+  "name": "mohammadou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "MyPeeps.js",
+  "dependencies": {
+    "autoloader": "^2.1.0",
+    "prompt-sync": "^4.1.5",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.4",
+    "unirest": "^0.5.1",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgningueASC4/Mohammadou.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgningueASC4/Mohammadou/issues"
+  },
+  "homepage": "https://github.com/mgningueASC4/Mohammadou#readme"
+}
