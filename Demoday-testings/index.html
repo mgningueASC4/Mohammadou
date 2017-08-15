@@ -1,136 +1,50 @@
-
-<!DOCTYPE html>
-<html lang="en">
 <html>
     <head>
-        <meta charset="UTF-8">
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-         <script src="main.js"></script>
-         <script src="bundle.js"></script>
-        <link rel = "stylesheet" type = "text/css" href = "style.css" />
-        <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
- 
-       <title> Shopping Cart</title>
-              <link href="style.css" rel ="stylesheet" type = "text/css" />
-        <script>
-          </script>
-   
-    </head>
-    <body>
-       <div id = "name"></div>
-      <div id="price"></div>
-    </body>
-</html>
-        <!-- <form name="_xclick" target="paypal" action="" method="post">
-<input type="hidden" name="cmd" value="_cart">
-<input type="hidden" name="business" value="">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="item_name" value="HTML book">
-<input type="hidden" name="amount" value="24.99">
-<input type="image" src="http://www.paypal.com/en_US/i/btn/sc-but-01.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
-<input type="hidden" name="add" value="1">
-</form>
-<form name="_xclick" target="paypal" action="" method="post">
-<input type="hidden" name="cmd" value="_cart">
-<input type="hidden" name="business" value="">
-<input type="image" src="https://www.paypal.com/en_US/i/btn/view_cart.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
-<input type="hidden" name="display" value="1">
-</form>
-       <div class="shopping-cart">
-      <!-- Title -->
-      <!--<div class="title">
-        Shopping Bag
-      </div>
- 
-      <!-- Product #1 -->
-      <!--<div class="item">
-        <div class="buttons">
-          <span class="delete-btn"></span>
-          <span class="like-btn"></span>
+    
+      <!-- Compiled and minified CSS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+ <link rel="stylesheet" href="style.css"></link>
+ <!-- <script src ="ajax.js"></script> -->
+ <script src="main.js"></script>
+        <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+<link href="https/fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+ <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        </head>
+        <body>
+            <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>TEM Shop</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="shopping_cart.html"><i class="material-icons">add_shopping_cart</i></a></li>
+        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+      </ul>
+    </div>
+  </nav>
+   <nav id= "search" class="white">
+    <div class="nav-wrapper">
+      <form id ="searching">
+        <div class="input-field">
+          <input id="searchbar" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
         </div>
- 
-        <div class="image">
-          <img src="item-1.png" alt="" />
+      </form>
+    </div>
+  </nav>
+        <div class = "Products">
+
         </div>
- 
-        <div class="description">
-          <span>Common Projects</span>
-          <span>Bball High</span>
-          <span>White</span>
-        </div>
- 
-        <div class="quantity">
-          <button class="plus-btn" type="button" name="button">
-            <img src="plus.svg" alt="" />
-          </button>
-          <input type="text" name="name" value="1">
-          <button class="minus-btn" type="button" name="button">
-            <img src="minus.svg" alt="" />
-          </button>
-        </div>
- 
-        <div class="total-price">$549</div>
-      </div>
- 
-      <!-- Product #2 -->
-      <!--<div class="item">
-        <div class="buttons">
-          <span class="delete-btn"></span>
-          <span class="like-btn"></span>
-        </div>
- 
-        <div class="image">
-          <img src="item-2.png" alt=""/>
-        </div>
- 
-        <div class="description">
-          <span>Maison Margiela</span>
-          <span>Future Sneakers</span>
-          <span>White</span>
-        </div>
- 
-        <div class="quantity">
-          <button class="plus-btn" type="button" name="button">
-            <img src="plus.svg" alt="" />
-          </button>
-          <input type="text" name="name" value="1">
-          <button class="minus-btn" type="button" name="button">
-            <img src="minus.svg" alt="" />
-          </button>
-        </div>
- 
-        <div class="total-price">$870</div>
-      </div>   -->
- 
-      <!-- Product #3 -->
-<!-- //       <div class="item">
-//         <div class="buttons">
-//           <span class="delete-btn"></span>
-//           <span class="like-btn"></span>
-//         </div>
- 
-//         <div class="image">
-//           <img src="item-3.png" alt="" />
-//         </div>
- 
-//         <div class="description">
-//           <span>Our Legacy</span>
-//           <span>Brushed Scarf</span>
-//           <span>Brown</span>
-//         </div>
- 
-//         <div class="quantity">
-//           <button class="plus-btn" type="button" name="button">
-//             <img src="plus.svg" alt="" />
-//           </button>
-//           <input type="text" name="name" value="1">
-//           <button class="minus-btn" type="button" name="button">
-//             <img src="minus.svg" alt="" />
-//           </button>
-//         </div>
- 
-//         <div class="total-price">$349</div>
-//       </div>
-//     </div>
-//     </body>
-// </html>    -->
+</body>
+        </html>
+
+         <!--
+      Sizes:
+      tiny: 1rem
+      small: 2rem
+      medium: 4rem
+      large: 6rem
+      -->
