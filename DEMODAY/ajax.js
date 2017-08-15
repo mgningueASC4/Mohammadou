@@ -1,3 +1,11 @@
+// add to cart function
+var shoppingCart =[];
+function addtocart(product,money){
+    shoppingCart.push(product)
+    console.log(shoppingCart);
+    $("#list").append("<li>" +product+" $"+money+"</li>")
+}
+
 function setup(){
   
     $("#searching").submit(function(e){
@@ -8,13 +16,6 @@ function setup(){
 }
 
 function search(){
-    // productName="Samsung";
-    // $.getJSON("https://price-api.datayuge.com/api/v1/compare/?apikey=RzQF3I2gTT7N4iWvBO3SKc1MUhy3t0JiGKZ&product="+productName,
-        
-    //     function(data) {
-    //         console.log(data);
-            
-    //     });
     $('.Products').empty();
     var search = $("#searchbar").val();
     console.log(search);
@@ -59,6 +60,8 @@ function search(){
                                 <p><span class="card-title black-text">${nem}</span></p>
                                 <p><span class="card-title black-text">${nom}</span></p>
                                 <p>₹${price}</p>
+                                 <p><i class="material-icons">add</i>n</p> 
+                                 <a onclick="addtocart('${nem}',200)" class="waves-effect waves-light btn"><i class="material-icons left">add_shopping_cart</i>add to cart</a>
                               </div>
                             </div>
                             </section>`

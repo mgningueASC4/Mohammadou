@@ -1,13 +1,14 @@
-/* Make sure each product isn't too big. */
-.products .card{
+.Products .card{
   width:250px;
   padding: 30px;
-} 
+}
 
-/* Make products go next to each other and wrap around at end of the line. */
-.products {
+.Products {
   display:flex;
   flex-flow: row wrap;
+}
+#shoppingcartlist{
+  min-height: 775px;
 }
 
 
