@@ -10,7 +10,19 @@
 #shoppingcartlist{
   min-height: 775px;
 }
+.pimage{
+  max-height: 100px;
+}
+.prod_img{
+  height:150px;
+}
+.card {
+  min-height: 600px;
+}
 
+.lowestPrice{
+  color: greenyellow;
+}
 
 /* Move search icon up. It's too low by default. */
 .input-field input[type=search]+label{
@@ -31,10 +43,10 @@
   right: 0;
 }
 
- {
+{
   box-sizing: border-box;
 }
- 
+
 html,
 body {
   width: 100%;
@@ -47,31 +59,31 @@ body {
   width: 750px;
   height: 423px;
   margin: 80px auto;
-  background: #FFFFFF;
+  background: #FFFFFF ;
   box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
   border-radius: 6px;
- 
-  display: flex;
+
+ display: flex;
   flex-direction: column;
 }
 .title {
   height: 60px;
-  border-bottom: 1px solid #E1E8EE;
+  border-bottom: 1px solid #E1E8EE ;
   padding: 20px 30px;
-  color: #5E6977;
+  color: #5E6977 ;
   font-size: 18px;
   font-weight: 400;
 }
- 
+
 .item {
   padding: 20px 30px;
   height: 120px;
   display: flex;
 }
- 
+
 .item:nth-child(3) {
-  border-top:  1px solid #E1E8EE;
-  border-bottom:  1px solid #E1E8EE;
+  border-top:  1px solid #E1E8EE ;
+  border-bottom:  1px solid #E1E8EE ;
 }
 .buttons {
   position: relative;
@@ -88,7 +100,7 @@ body {
   height: 17px;
   background: url("delete-icn.svg") no-repeat center;
 }
- 
+
 .like-btn {
   position: absolute;
   top: 9px;
@@ -106,7 +118,7 @@ body {
   animation-timing-function: steps(28);
   animation-fill-mode: forwards;
 }
- 
+
 @keyframes animate {
   0%   { background-position: left;  }
   50%  { background-position: right; }
@@ -115,28 +127,28 @@ body {
 .image {
   margin-right: 50px;
 }
- 
+
 <!--Let’s add some basic style to  product name and description.
 .description {
   padding-top: 10px;
   margin-right: 60px;
   width: 115px;
 }
- 
+
 .description span {
   display: block;
   font-size: 14px;
-  color: #43484D;
+  color: #43484D ;
   font-weight: 400;
 }
- 
+
 .description span:first-child {
   margin-bottom: 5px;
 }
 .description span:last-child {
   font-weight: 300;
   margin-top: 8px;
-  color: #86939E;
+  color: #86939E ;
 }
 .quantity {
   padding-top: 20px;
@@ -148,14 +160,14 @@ body {
   text-align: center;
   width: 32px;
   font-size: 16px;
-  color: #43484D;
+  color: #43484D ;
   font-weight: 300;
 }
- 
+
 button[class*=btn] {
   width: 30px;
   height: 30px;
-  background-color: #E1E8EE;
+  background-color: #E1E8EE ;
   border-radius: 6px;
   border: none;
   cursor: pointer;
@@ -166,7 +178,7 @@ button[class*=btn] {
 .plus-btn img {
   margin-top: 2px;
 }
- 
+
 button:focus,
 input:focus {
   outline:0;
@@ -176,7 +188,7 @@ input:focus {
   padding-top: 27px;
   text-align: center;
   font-size: 16px;
-  color: #43484D;
+  color: #43484D ;
   font-weight: 300;
 }
 @media (max-width: 800px) {
@@ -212,4 +224,27 @@ input:focus {
 .Products {
   display:flex;
   flex-flow: row wrap;
+}
+#super {
+    text-align: center;
+
+}
+.waves-effect material-icons right {
+    width: 500px;
+    height: 500x;
+}
+.options{
+    height: 50px;
+   /* width: 100px; */
+
+}
+#checkout {
+    text-align: center;
+    
+}
+#credit {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+
 }
