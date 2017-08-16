@@ -17,11 +17,23 @@
   height:150px;
 }
 .card {
-  min-height: 600px;
+  height: 630px;
 }
-
+.card
 .lowestPrice{
   color: greenyellow;
+}
+
+.card .card-image img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    justify-content: center;
 }
 
 /* Move search icon up. It's too low by default. */
@@ -66,7 +78,7 @@ body {
  display: flex;
   flex-direction: column;
 }
-.title {
+/* .title {
   height: 60px;
   border-bottom: 1px solid #E1E8EE ;
   padding: 20px 30px;
@@ -182,7 +194,7 @@ button[class*=btn] {
 button:focus,
 input:focus {
   outline:0;
-}
+} */
 .total-price {
   width: 83px;
   padding-top: 27px;

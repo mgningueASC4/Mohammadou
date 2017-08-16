@@ -1,3 +1,27 @@
+// // Money.js things!!
+// fx.base = "USD";
+// fx.rates = {
+// 	"EUR" : 0.85, // eg. 1 USD === 0.745101 EUR
+// 	"GBP" : 0.78, // etc...
+// 	"HKD" : 7.82,
+//   "USD" : 1,        // always include the base rate (1:1)
+//   /* etc */
+//   "INR" : 64.17,
+// }
+// var demo = function(data) {
+//   fx.rates = data.rates
+//   var rate = fx(1).from("INR").to("USD")
+//   alert(`₹1 = $ ${rate.toFixed(4)}`)
+// }
+
+// $.getJSON("http://api.fixer.io/latest", demo)
+
+// Converts ruppees into Dollars
+let Convert = (price, cvr) => {
+    price = Math.floor(price/cvr)
+    return price;
+}
+
 // add to cart function
 var shoppingCart =[];
 let totalprice =0;
@@ -67,8 +91,8 @@ function search(){
                     let atStore = store[nom].product_store_url 
                      let price = Number(store[nom].product_price);//price of each object
                      console.log(price);
-                     console.log(typeof(price));
-                     console.log(lowest_price === price);
+                     price = Convert(price, 64.17);
+                     console.log(price);
                      if(lowest_price === price){
                         $('.Products').append(
                             `<section>
@@ -81,7 +105,7 @@ function search(){
                                 <p><span class="card-title black-text">${nem}</span></p>
                                 <p><span class="card-title black-text">${nom}</span></p>
                                 <a href=${atStore}><img src=${logo} class="logo"></a>
-                                <p>₹${price}</p>
+                                <p>$${price}</p>
       
                                  <p><i class="material-icons">add</i></p> 
                                  <a onclick="addtocart('${nem}',${price},'${imag}')" class="waves-effect waves-light btn"><i class="material-icons left">add_shopping_cart</i>ADD TO CART</a>
@@ -100,7 +124,7 @@ function search(){
                                 <p><span class="card-title black-text">${nem}</span></p>
                                 <p><span class="card-title black-text">${nom}</span></p>
                                 <a href=${atStore}><img src=${logo} class="logo"></a>
-                                <p>₹${price}</p>
+                                <p>$${price}</p>
                                  <p><i class="material-icons">add</i></p> 
                                  <a onclick="addtocart('${nem}',${price},'${imag}')" class="waves-effect waves-light btn"><i class="material-icons left">add_shopping_cart</i>add to cart</a>
                               </div>
