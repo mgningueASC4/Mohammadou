@@ -18,24 +18,27 @@
           <!--Fonts  -->
         <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kanit:300|Open+Sans:300" rel="stylesheet">
         <!--Style  -->
         <link href="style.css" rel ="stylesheet" type = "text/css" />
     </head>
     <body>
-              <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>TEM Shop</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#shoppingcartlist"><i class="material-icons">shopping_cart</i></a></li>
-            <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="navbar-fixed">       
+        <nav class="teal">      
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><i class="material-icons">donut_small</i>TEM Shop</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#shoppingcartlist"><i class="material-icons">shopping_cart</i></a></li>
+              <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <nav id= "search" class="white">
         <div class="nav-wrapper">
           <form id ="searching">
             <div class="input-field">
-              <input id="searchbar" type="search" required>
+              <input id="searchbar" type="search" required placeholder="What would you like to buy today?">
               <label class="label-icon" for="search"><i class="material-icons">search</i></label>
             </div>
           </form>
@@ -43,21 +46,32 @@
       </nav>
         <div class = "Products">
         </div>
-         <div id = "shoppingcartlist">
+         <div class = "teal" id = "shoppingcartlist">
           <h1> Your cart </h1>
-           <table class="striped"> 
-                 <tbody id = "shoplist">                    
-                   </tbody>
+            <table class="highlight"> 
+                <thead>
+                  <tr>
+                    <th>Picture</th>  
+                      <th>Item Name</th>
+                      <th>Item Price</th>
+                  </tr>
+              </thead>    
+                 <tbody id = "shoplist"></tbody>
         
         
         
-                  </table>
-          <ol id = "list"></ol>
-       <div class = "totalprice">
-         </div>
-        </div>
-          
+              </table>
+                <ol id = "list"></ol>
+                  <div class = "totalprice"></div>
+           </div>
+             <div id= "super"></div>
+              <div id ="ode" class= "wassup">
+                <a class="waves-effect waves-light btn-large"><i class="material-icons left">attach_money</i>Checkout</a>
+              </div>
+                
           </div>
+  <div class = "entireP
+  urchase">
         <h1> Please fill out the following information to complete your purchase </h1>
         <div class="row">
     <form class="col s12">
@@ -130,9 +144,9 @@
     </form>
     </div>
          
-          <div id = "checkout">
-          <a class="waves-effect waves-light btn-large"><i class="material-icons left">attach_money</i>Checkout</a>
+          <div id = "pay" class= "wassup">
+          <a class="waves-effect waves-light btn-large"><i class="material-icons left">attach_money</i>Pay</a>
         </div>
-          </div>
+  </div>
     </body>
 </html>

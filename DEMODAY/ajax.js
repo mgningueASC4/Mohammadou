@@ -1,20 +1,4 @@
-// // Money.js things!!
-// fx.base = "USD";
-// fx.rates = {
-// 	"EUR" : 0.85, // eg. 1 USD === 0.745101 EUR
-// 	"GBP" : 0.78, // etc...
-// 	"HKD" : 7.82,
-//   "USD" : 1,        // always include the base rate (1:1)
-//   /* etc */
-//   "INR" : 64.17,
-// }
-// var demo = function(data) {
-//   fx.rates = data.rates
-//   var rate = fx(1).from("INR").to("USD")
-//   alert(`₹1 = $ ${rate.toFixed(4)}`)
-// }
 
-// $.getJSON("http://api.fixer.io/latest", demo)
 
 // Converts ruppees into Dollars
 let Convert = (price, cvr) => {
@@ -36,19 +20,24 @@ function addtocart(product,money,image){
    console.log(totalprice);
    $('.totalprice').empty().append(`
     <h3> Total: ${totalprice}</h3>`);
+    $('#shoppingcartlist').show();
 }   
 
 function setup(){
-  
+  $('#shoppingcartlist').hide();
+  $('.entireurchase').hide();
     $("#searching").submit(function(e){
         e.preventDefault();
         search();
     })
-    $('#checkout').click(function(e) {
+
+    $('#pay').click(function(e) {
         alert("Thank you for your purchase!");
         $('#shoplist').empty();
     })
-
+      $('#ode').click(function(e){
+        $('.entireurchase').show();
+      })
 }
 
 function search(){
@@ -66,6 +55,7 @@ function search(){
             console.log(info);
           for (var val of info ){
             let lowest_price = val.product_lowest_price;
+            lowest_price= Convert(lowest_price, 64.17)
             console.log(lowest_price);
             // if (val.product_category === "mobile" && val.product_sub_category ==="mobile"){
             let id = val.product_id//gets id used in second url for getting store info
@@ -149,5 +139,7 @@ function search(){
 
   }
 }
-
+	$(document).ready(function(){
+      $('.carousel').carousel();
+    });
 $(document).ready(setup);
