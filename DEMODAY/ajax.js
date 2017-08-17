@@ -25,7 +25,7 @@ function addtocart(product,money,image){
 
 function setup(){
   $('#shoppingcartlist').hide();
-  $('.entireurchase').hide();
+  $('#entireurchase').hide();
     $("#searching").submit(function(e){
         e.preventDefault();
         search();
@@ -36,7 +36,7 @@ function setup(){
         $('#shoplist').empty();
     })
       $('#ode').click(function(e){
-        $('.entireurchase').show();
+        $('#entireurchase').show();
       })
 }
 
