@@ -74,9 +74,7 @@ function search(){
                     if(Object.keys(store[nom]).length>0){//checks if sold by that retailer (if retailer info is present in the array)
                     // WHERE TO ADD IF UNDER SAME PROD_ID, WANT TO BE IN ONE BOX, NOT MANY SEPARATE PROD, THEN FIND CHEAPEST)
                       // console.log(store);
-                      console.log(lowest_price);
-                console.log(typeof(lowest_price));
-      
+                      console.log(lowest_price);      
                     let logo = store[nom].product_store_logo;
                     let atStore = store[nom].product_store_url 
                      let price = Number(store[nom].product_price);//price of each object
